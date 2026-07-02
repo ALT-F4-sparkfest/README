@@ -29,8 +29,62 @@ Busina closes that gap with a real-time fleet intelligence system: GPS-based veh
 
 - **Live Fleet Map** — real-time vehicle positions across all active routes on an interactive Google Map.
 - **Commuter ETA Lookup** — select a stop and see live arrival estimates for every approaching jeepney.
-- **Bunching Detection** — automatically flags jeepneys clustering on the same route and alerts dispatchers to correct spacing.
+- **Nearby Vehicle Detection** — automatically sorts and surfaces the nearest available jeepneys based on the commuter's current location.
 - **AI Insights Dashboard** — travel-time-by-hour charts, demand hotspot maps, and fleet performance KPIs generated from GPS data.
+
+## Frontend Features (MVP)
+
+### Landing Page
+- Modern, responsive landing page with project overview and feature highlights
+- Live fleet statistics
+- Navigation into the Commuter and Operator dashboards
+- Mobile-responsive design
+
+
+### Commuter Dashboard
+
+**Live Interactive Map** — live, moving PUV markers via Google Maps integration; automatic centering on the commuter's location with a manual refresh option; click any vehicle to inspect its details.
+
+**Route Filtering** — filter visible vehicles by registered route.
+
+**Nearby Vehicle Detection** — automatically sorts and surfaces the nearest available buses.
+
+**ETA Prediction** — select a destination or stop for heuristic-based, live ETA estimates.
+
+**Vehicle Information** — for every selected vehicle: route, current speed, passenger load, distance from the commuter, and estimated arrival time.
+
+*Planned:* a **Waiting** button that sends passenger demand directly to the Operator Dashboard in real time.
+
+
+### Operator Dashboard
+
+**Live KPI Dashboard** — real-time cooperative metrics: active fleet, average speed, fleet utilization, and other operational statistics.
+
+**Fleet Monitoring Map** — live vehicle locations on an interactive Google Map, with route filtering, crowded-area visualization, and vehicle selection.
+
+**Vehicle Information Panel** — detailed operational data per vehicle: ID, route, current speed, passenger count/capacity, ETA, nearest stop, and GPS coordinates.
+
+**Fleet Analytics** — travel performance graphs and other fleet monitoring visualizations.
+
+**Demand Hotspots** — visual ranking of high-demand areas, each showing route, average waiting time, and passenger demand ranking. Example:
+1. Makati CBD
+2. Ayala Avenue
+3. Araneta Center
+4. Ortigas Center
+5. Aurora Boulevard
+
+**AI Insights Dashboard** — operational recommendations generated from fleet data: efficiency summaries, demand hotspot analysis, and suggested fleet redistribution. Example output:
+
+> Fleet is operating efficiently across all active vehicles. Current demand is highest around Makati CBD. Existing fleet allocation is sufficient, but additional monitoring is recommended during peak periods.
+
+*Planned:* **Live Alerts** for vehicle breakdowns, long stops, route deviations, bus bunching, and traffic disruptions.
+
+### Shared Features
+- Real-time updates via Socket.IO
+- Responsive layout across mobile and desktop
+- Live Google Maps integration and route filtering throughout
+- Interactive vehicle selection and automatic data refresh
+- Built on a modern React UI
 
 ---
 
