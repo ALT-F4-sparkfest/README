@@ -32,7 +32,7 @@ cooperatives per GPS-verified kilometer traveled.
 
 | Name | Role |
 |---|---|
-| Christopher James A. Cresencio | AI & Data Lead |
+| Christopher James A. Cresencio | Data & Team Lead |
 | Joaqui Rainiel A. Jerez | Backend Lead |
 | Jhon Rey D. Oquendo | Frontend Lead |
 | Red Colby S. Dumdum | Hardware Lead |
